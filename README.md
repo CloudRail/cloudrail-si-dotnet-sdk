@@ -37,7 +37,8 @@ This means that, for example, Upload() works in exactly the same way for Dropbox
 You can download CloudRail SDK Nuget Package from:
 https://www.nuget.org/packages/CloudRail.SDK
 Or just download and add the DLL `CloudRailSI.dll` file to your project reference
-and starting using it
+and starting using it. 
+**Note**: If you are using the DLL you must download the Dependecies. 
 
 ```groovy
 using Com.Cloudrail.SI;
@@ -46,10 +47,11 @@ CloudRail.AppKey = "{Your_License_Key}";
 ```
 [Get a free license key here](https://cloudrail.com/signup)
 
-## Dependencies Required
-[Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json/)
+## Dependencies Required for DLL
+Use the specific version number for Newtonsoft.Json which is 10.0.3
+[Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json/10.0.3)
 
-[OpenSSL.X509Certificate2.Provider](https://www.nuget.org/packages/OpenSSL.X509Certificate2.Provider/)
+[OpenSSL.X509Certificate2.Provider](https://www.nuget.org/packages/OpenSSL.X509Certificate2.Provider/1.2.0)
 
 ## Platforms Support
 Cloudrail SDK is built with Microsoft .NET Standard 2.0 which supports the following platforms: 

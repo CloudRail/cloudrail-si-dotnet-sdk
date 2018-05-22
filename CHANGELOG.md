@@ -1,5 +1,13 @@
 # Change Log
 
+## [1.0.3](https://github.com/CloudRail/cloudrail-si-ios-sdk/tree/1.0.3) (2018-05-22)
+[Full Changelog](https://github.com/CloudRail/cloudrail-si-ios-sdk/compare/1.0.2...1.0.3)
+
+* OneDriveBusiness: Fix missing url encoding of the client secret on refreshing tokens
+* GoogleCloudPlatform: Add a missing internal function
+* MicrosoftAzure: Fix an issue in the advanced request function
+* Content-Type error fixed
+
 ## [1.0.2](https://github.com/CloudRail/cloudrail-si-ios-sdk/tree/1.0.2) (2018-04-23)
 [Full Changelog](https://github.com/CloudRail/cloudrail-si-ios-sdk/compare/1.0.1...1.0.2)
 

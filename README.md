@@ -565,6 +565,57 @@ new System.Threading.Thread(new System.Threading.ThreadStart(() =>
 
 ```
 ---
+### Advance Request
+
+The feature’s main target audience are developers that are already using one or more services through a CloudRail integration but are missing a specific functionality. If that functionality is provided by a service’s API but by none of the CloudRail interfaces then Advanced Request is for you. The feature provides developers with an HTTP client “on steroids”. It allows you to specify your own HTTP requests towards the underlying API but supports you in many ways. It automatically prepends the base URL, takes care of authentication and does error checking for you. That way you can access all of an API’s functionality with only little more effort than using one of the functions of a CloudRail interface.
+
+```csharp
+using Com.CloudRail.SI;
+using Com.CloudRail.SI.Interfaces;
+using Com.CloudRail.SI.ServiceCode.Commands.CodeRedirect;
+using Com.CloudRail.SI.Services;
+using Com.CloudRail.SI.Types;
+
+
+CloudRail.AppKey = "{Your_License_Key}";
+
+int port = 8089;
+
+Dropbox dropbox = new Dropbox(
+      new LocalReceiver(port),
+      "[Dropbox App Key]",
+      "[Dropbox App Secret]",
+      "http://localhost:" + port + "/auth",
+      "someState"
+);
+
+
+//URL to Request
+AdvancedRequestSpecification req = new AdvancedRequestSpecification("/sharing/list_folders");
+req.SetMethod("POST");
+
+//Set Body
+Dictionary<string, object> body = new Dictionary<string, object>
+{
+    { "limit", 100 }
+};
+req.SetBodyStringifyJson(body);
+
+
+//Set Header
+Dictionary<string, object> header = new Dictionary<string, object>
+{
+    {"Content-Type", "application/json"}
+};
+req.SetHeaders(header);
+
+//Response
+AdvancedRequestResponse res = dropbox.AdvancedRequest(req);
+
+System.Console.WriteLine(res.GetBodyAsString());
+
+```
+---
 
 More interfaces are coming soon.
 
@@ -589,6 +640,7 @@ If you don't know how to start or just want to have a look at how to use our SDK
 * Sample using the CloudStorage interface: [UnifiedCloudStorage](https://github.com/CloudRail/cloudrail-si-dotnet-sdk/tree/master/Examples/UnifiedCloudStorage)
 * Sample using the Social Profile interface: [UnifiedSocialProfile](https://github.com/CloudRail/cloudrail-si-dotnet-sdk/tree/master/Examples/UnifiedSocialProfile)
 * Sample using the Bucket Storage interface: [UnifiedBucketCloudStorage](https://github.com/CloudRail/cloudrail-si-dotnet-sdk/tree/master/Examples/UnifiedBucketCloudStorage)
+* Sample using the Messaging interface: [UnifiedMessaging](https://github.com/CloudRail/cloudrail-si-dotnet-sdk/tree/master/Examples/UnifiedMessaging)
 
 ## License Key
 

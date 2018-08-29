@@ -1,5 +1,11 @@
 # Change Log
 
+## [1.0.5](https://github.com/CloudRail/cloudrail-si-dotnet-sdk/tree/1.0.5) (2018-08-29)
+[Full Changelog](https://github.com/CloudRail/cloudrail-si-dotnet-sdk/compare/1.0.4...1.0.5)
+
+* Fixed One Drive for Business Authentication Process
+* Fixed Google Drive issue (fileExists)
+
 ## [1.0.4](https://github.com/CloudRail/cloudrail-si-dotnet-sdk/tree/1.0.4) (2018-08-24)
 [Full Changelog](https://github.com/CloudRail/cloudrail-si-dotnet-sdk/compare/1.0.3...1.0.4)
 

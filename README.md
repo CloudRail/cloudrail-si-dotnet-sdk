@@ -45,7 +45,7 @@ using Com.Cloudrail.SI;
 
 CloudRail.AppKey = "{Your_License_Key}";
 ```
-[Get a free license key here](https://cloudrail.com/signup)
+[Get your license key here](https://cloudrail.com/signup)
 
 ## Dependencies Required for DLL
 Use the specific version number for Newtonsoft.Json which is 10.0.3
@@ -644,9 +644,9 @@ If you don't know how to start or just want to have a look at how to use our SDK
 
 ## License Key
 
-CloudRail provides a developer portal which offers usage insights for the SDKs and allows you to generate license keys.
+CloudRail provides a developer portal which offers usage insights for the SDKs and allows you to generate license key.
 
-It's free to sign up and generate a key.
+It's easy to sign up and generate a key.
 
 Head over to https://cloudrail.com/signup
 

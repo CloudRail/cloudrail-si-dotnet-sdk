@@ -1,5 +1,10 @@
 # Change Log
 
+## [1.0.6](https://github.com/CloudRail/cloudrail-si-dotnet-sdk/tree/1.0.6) (2018-09-10)
+[Full Changelog](https://github.com/CloudRail/cloudrail-si-dotnet-sdk/compare/1.0.5...1.0.4)
+
+* Added Documentation to Interface Methods and Object Classes
+
 ## [1.0.5](https://github.com/CloudRail/cloudrail-si-dotnet-sdk/tree/1.0.5) (2018-08-29)
 [Full Changelog](https://github.com/CloudRail/cloudrail-si-dotnet-sdk/compare/1.0.4...1.0.5)
 

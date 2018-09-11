@@ -1,7 +1,12 @@
 # Change Log
 
+## [1.0.7](https://github.com/CloudRail/cloudrail-si-dotnet-sdk/tree/1.0.7) (2018-09-11)
+[Full Changelog](https://github.com/CloudRail/cloudrail-si-dotnet-sdk/compare/1.0.6...1.0.7)
+
+* GoogleDrive: Fix Authentication issue
+
 ## [1.0.6](https://github.com/CloudRail/cloudrail-si-dotnet-sdk/tree/1.0.6) (2018-09-10)
-[Full Changelog](https://github.com/CloudRail/cloudrail-si-dotnet-sdk/compare/1.0.5...1.0.4)
+[Full Changelog](https://github.com/CloudRail/cloudrail-si-dotnet-sdk/compare/1.0.5...1.0.6)
 
 * Added Documentation to Interface Methods and Object Classes
 
